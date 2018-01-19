@@ -4,7 +4,7 @@ var axios = require('axios');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Mail App' });
 });
 
 router.get('/send', function(req, res, next) {
