@@ -14,7 +14,7 @@ router.get('/send', function(req, res, next) {
     res.render('result', { title: 'Express' });
   })
   .catch(function (error) {
-    console.log(error);
+    res.render('error', { error: error.response });
   });
 });
 
