@@ -7,5 +7,11 @@
   <body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
+    <form action="/send" method="get">
+      Email<input type="text" name="email"><br>
+      Topic<input type="text" name="topic"><br>
+      Message<input type="text" name="message"><br>
+      <input type="submit" value="Submit">
+    </form>
   </body>
 </html>
