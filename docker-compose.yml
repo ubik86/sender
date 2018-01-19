@@ -3,6 +3,8 @@ services:
   web:
     build: .
     command: npm run start
+    environment:
+    - API=http://192.168.1.252:8080
     volumes:
       - .:/usr/app/
       - /usr/app/node_modules

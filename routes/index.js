@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/send', function(req, res, next) {
-  axios.post('http://192.168.1.252:8080/api/mail', req.query)
+  axios.post(process.env.API+'/api/mail', req.query)
   .then(function (response) {
     console.log('sended');
     res.render('result', { title: 'Express' });
