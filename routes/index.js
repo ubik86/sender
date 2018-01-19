@@ -8,14 +8,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/send', function(req, res, next) {
-  axios.post('http://192.168.1.252:8080/api/mail', 
-    req.query
-  // {
-  //   email: 'boguslaw.tarnowski@intive.com',
-  //   topic: 'test',
-  //   message: 'its working'
-  // }
-  )
+  axios.post('http://192.168.1.252:8080/api/mail', req.query)
   .then(function (response) {
     console.log('sended');
     res.render('result', { title: 'Express' });
