@@ -5,7 +5,14 @@
     <title>Error</title>
   </head>
   <body>
-    <h1><%= error.message %></h1>
-    <p><%= error.status %></p>
+    <div class="jumbotron">
+      <h1 class="display-1">Error</h1>
+      <h1 class="display-3"><%= error.message %></h1>
+      <p class="lead"><%= error.status %></p>
+      <hr class="my-4">
+      <p class="lead">
+        <a class="btn btn-primary btn-lg" href="/" role="button">Go Home</a>
+      </p>
+    </div>
   </body>
 </html>
